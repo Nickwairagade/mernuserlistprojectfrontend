@@ -1,0 +1,18 @@
+.container{
+    background-color: #fdfafa;
+}
+.profile_div .profile{
+    max-width: 80px;
+    border-radius: 50%;
+    border: 1px solid #111;
+}
+.container .register{
+    max-width: 100%;
+    border-radius: 0;
+    border: none;
+}
+.container label{
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #6e6b6b;
+}
