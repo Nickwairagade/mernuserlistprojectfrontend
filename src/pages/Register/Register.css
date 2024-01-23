@@ -16,3 +16,9 @@
     font-weight: bold;
     color: #6e6b6b;
 }
+
+@media screen and (max-width: 600px) {
+    .container .register {
+        display: none;
+    }
+  }

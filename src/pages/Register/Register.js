@@ -83,7 +83,7 @@ const Register = () => {
       toast.error("location is Required !");
     } else {
       console.log(image);
-      
+
       const data = new FormData();
       data.append("fname", fname);
       data.append("lname", lname);
@@ -140,7 +140,7 @@ const Register = () => {
             <div className="profile_div">
               <Form>
                 <Row>
-                  <div className="col-lg-6">
+                  <div className="register col-lg-6">
                     <div className="profile_div text-center">
                       <img
                         src={preview ? preview : img}
@@ -258,16 +258,21 @@ const Register = () => {
                           placeholder="Enter Your Location"
                         />
                       </Form.Group>
-
-                      <Button
-                        className="col-lg-3"
-                        variant="primary"
-                        type="submit"
-                        size="sm"
-                        onClick={submitUserData}
-                      >
-                        Submit
-                      </Button>
+                      <Form.Group>
+                        <Button
+                          className="col-lg-3"
+                          variant="primary"
+                          type="submit"
+                          size="sm"
+                          style={{
+                            borderRadius: "0",
+                            backgroundColor: "#002b80",
+                          }}
+                          onClick={submitUserData}
+                        >
+                          SUBMIT
+                        </Button>
+                      </Form.Group>
                     </Row>
                   </div>
                 </Row>

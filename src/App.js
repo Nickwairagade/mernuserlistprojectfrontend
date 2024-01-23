@@ -6,6 +6,8 @@ import Edit from "./pages/Edit/Edit.js";
 import Profile from "./pages/Profile/Profile.js";
 import Register from "./pages/Register/Register.js";
 import Headers from "./components/Headers/Headers.js"
+import Login from './pages/Login/Login.js';
+import Error from './pages/Error/Error.js';
 
 function App() {
   return (
@@ -14,9 +16,11 @@ function App() {
         <Headers />
         <Routes>
           <Route  path='/' element={<Home/>} />
+          <Route  path='/login' element={<Login/>} />
           <Route  path='/register' element={<Register/>} />
           <Route path='/edit/:id' element={<Edit />}/>
           <Route  path='/userprofile/:id' element={<Profile/>} />
+          <Route path='/error' element={<Error />} />
         </Routes>
       </BrowserRouter>
     </>
